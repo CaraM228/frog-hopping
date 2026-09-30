@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frog Hopper</title>
     <link href="./output.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
 </head>
 <body>
-    <h1 class="title text-center text-5xl font-sans">Frog Hopper</h1>
+    <header>
+    <h1 class="title text-center text-5xl font-sans mb-4">Frog Hopper</h1>
+    <p class="text-center font-sans">Use the arrow keys or "WASD" to move.</p>
+    </header>
 
-    <div class="pond-container min-h-screen flex justify-center items-center">
-    <div class="pond-layout grid grid-cols-2 gap-1 w-96 h-96">
-
-        <div class="water-tile bg-[oklch(52%_0.105_223.128)] flex justify-center items-center">
-            <div class="lilypad bg-[oklch(84.1%_0.238_128.85)] w-40 h-40 rounded-full flex justify-center items-center">
-                <div class="frog bg-[oklch(57.7%_0.245_27.325)] w-16 h-16 rounded-full"></div>
-            </div>
-        </div>
+    <div class="pond-container min-h-screen flex justify-center items-center bg-[oklch(52%_0.105_223.128)]">
+    <div class="pond-layout grid grid-cols-2 gap-1 w-96 h-96 bg-[oklch(52%_0.105_223.128)]">
 
         <div class="water-tile bg-[oklch(52%_0.105_223.128)] flex justify-center items-center">
             <div class="lilypad bg-[oklch(84.1%_0.238_128.85)] w-40 h-40 rounded-full flex justify-center items-center">
@@ -27,13 +24,19 @@
 
         <div class="water-tile bg-[oklch(52%_0.105_223.128)] flex justify-center items-center">
             <div class="lilypad bg-[oklch(84.1%_0.238_128.85)] w-40 h-40 rounded-full flex justify-center items-center">
-                <div class="frog bg-[oklch(57.7%_0.245_27.325)] w-16 h-16 rounded-full"></div>
+                <div class="frog hidden bg-[oklch(57.7%_0.245_27.325)] w-16 h-16 rounded-full"></div>
             </div>
         </div>
 
         <div class="water-tile bg-[oklch(52%_0.105_223.128)] flex justify-center items-center">
             <div class="lilypad bg-[oklch(84.1%_0.238_128.85)] w-40 h-40 rounded-full flex justify-center items-center">
-                <div class="frog bg-[oklch(57.7%_0.245_27.325)] w-16 h-16 rounded-full"></div>
+                <div class="frog hidden bg-[oklch(57.7%_0.245_27.325)] w-16 h-16 rounded-full"></div>
+            </div>
+        </div>
+
+        <div class="water-tile bg-[oklch(52%_0.105_223.128)] flex justify-center items-center">
+            <div class="lilypad bg-[oklch(84.1%_0.238_128.85)] w-40 h-40 rounded-full flex justify-center items-center">
+                <div class="frog hidden bg-[oklch(57.7%_0.245_27.325)] w-16 h-16 rounded-full"></div>
             </div>
         </div>
     </div>
